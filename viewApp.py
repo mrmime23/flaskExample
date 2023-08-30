@@ -17,14 +17,14 @@ def F2(n):
     return '<h1>Hi {}</h1>'.format(n)
 
 @App1.route('/sv/<data>')
-def Function3(data):
+def Function__3(data):
     dlist = ["h","b","t","m","w","j"]
     if len(data) > 3:
         Data1 = data
         data2 = None
     else:
         Data1 = None
-        data2 = data
+        Data2 = data
     return F.render_template('v.html',l=dlist,LN=Data1,SN=data2)
 
 if __name__ == '__main__':
