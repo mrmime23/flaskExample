@@ -1,6 +1,6 @@
 # Import statements necessary
-from flask as F
-from flask_script as FS
+import flask as F
+import flask_script as FS
 
 # Set up application
 App1 = F.Flask(__name__)
