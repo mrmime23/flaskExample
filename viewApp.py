@@ -20,12 +20,12 @@ def f2(n):
 def Function__3(data):
     Dlist = ["h","b","t","m","w","j"]
     if len(data) > 3:
-        Data1 = data
+        data1 = data
         Data2 = None
     else:
-        Data1 = None
+        data1 = None
         Data2 = data
-    return F.render_template('v.html',l=Dlist,LN=Data1,SN=data2)
+    return F.render_template('v.html',l=Dlist,LN=data1,SN=data2)
 
 if __name__ == '__main__':
     m.run()
