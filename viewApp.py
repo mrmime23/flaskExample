@@ -9,15 +9,15 @@ m = FS.Manager(App1)
 
 # Routes
 @App1.route('/')
-def f1():
+def F1():
     return '<h1>hw!</h1>'
 
 @App1.route('/u/<n>')
-def f2(n):
+def F2(n):
     return '<h1>Hi {}</h1>'.format(n)
 
 @App1.route('/sv/<data>')
-def function3(data):
+def Function3(data):
     dlist = ["h","b","t","m","w","j"]
     if len(data) > 3:
         Data1 = data
