@@ -18,14 +18,14 @@ def F2(n):
 
 @App1.route('/sv/<data>')
 def Function__3(data):
-    dlist = ["h","b","t","m","w","j"]
+    Dlist = ["h","b","t","m","w","j"]
     if len(data) > 3:
         Data1 = data
-        data2 = None
+        Data2 = None
     else:
         Data1 = None
         Data2 = data
-    return F.render_template('v.html',l=dlist,LN=Data1,SN=data2)
+    return F.render_template('v.html',l=Dlist,LN=Data1,SN=data2)
 
 if __name__ == '__main__':
     m.run()
