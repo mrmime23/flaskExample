@@ -9,11 +9,11 @@ m = FS.Manager(App1)
 
 # Routes
 @App1.route('/')
-def F1():
+def f1():
     return '<h1>hw!</h1>'
 
 @App1.route('/u/<n>')
-def F2(n):
+def f2(n):
     return '<h1>Hi {}</h1>'.format(n)
 
 @App1.route('/sv/<data>')
