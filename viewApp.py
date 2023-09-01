@@ -7,6 +7,22 @@ App1 = F.Flask(__name__)
 
 M = FS.Manager(App1)
 
+# Simple unreadable class
+class ___cLass__1:
+    def __init__(self):
+        self.data = []
+
+    def ___add__data(self, value):
+        self.data.append(value)
+
+    def pRocess___data(self):
+        processed_data = ""
+        for item in self.data:
+            processed_data += str(item) + " Pr0cessed "
+        return processed_data
+
+instance_1 = ___cLass__1()
+
 # Routes
 @App1.route('/')
 def f1():
@@ -21,11 +37,11 @@ def Function__3(data):
     Dlist = ["h","b","t","m","w","j"]
     if len(data) > 3:
         Data1 = data
-        data2 = None
+        Data2 = None
     else:
         Data1 = None
-        data2 = data
-    return F.render_template('v.html',l=Dlist,LN=data1,SN=data2)
+        Data2 = data
+    return F.render_template('v.html',l=Dlist,LN=Data1,SN=Data2)
 
 if __name__ == '__main__':
     M.run()
