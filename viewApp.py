@@ -12,7 +12,7 @@ class ___cLass__1:
     def __init__(self):
         self.data = []
 
-    def ___add__data(self, value):
+    def ___Add__data(self, value):
         self.data.append(value)
 
     def pRocess___data(self):
@@ -21,7 +21,7 @@ class ___cLass__1:
             processed_data += str(item) + " Pr0cessed "
         return processed_data
 
-instance_1 = ___cLass__1()
+Instance1 = ___cLass__1()
 
 # Routes
 @App1.route('/')
