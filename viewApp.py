@@ -5,14 +5,14 @@ import flask_script as FS
 # Set up application
 App1 = F.Flask(__name__)
 
-M = FS.Manager(App1)
+Mount = FS.Manager(App1)
 
 # Simple unreadable class
 class ___cLass__1:
     def __init__(self):
         self.data = []
 
-    def ___Add__data(self, value):
+    def ___add__data(self, value):
         self.data.append(value)
 
     def pRocess___data(self):
@@ -44,4 +44,4 @@ def Function__3(data):
     return F.render_template('v.html',l=Dlist,LN=Data1,SN=Data2)
 
 if __name__ == '__main__':
-    M.run()
+    Mount.run()
