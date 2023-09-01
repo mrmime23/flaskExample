@@ -5,7 +5,7 @@ import flask_script as FS
 # Set up application
 App1 = F.Flask(__name__)
 
-m = FS.Manager(App1)
+M = FS.Manager(App1)
 
 # Routes
 @App1.route('/')
@@ -20,12 +20,12 @@ def f2(n):
 def Function__3(data):
     Dlist = ["h","b","t","m","w","j"]
     if len(data) > 3:
-        data1 = data
+        Data1 = data
         Data2 = None
     else:
-        data1 = None
+        Data1 = None
         Data2 = data
     return F.render_template('v.html',l=Dlist,LN=data1,SN=data2)
 
 if __name__ == '__main__':
-    m.run()
+    M.run()
